@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatFormFieldModule, MatInputModule, MatToolbar, MatToolbarModule } from '@angular/material';
 
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './sso/login/login.component';
@@ -23,7 +23,10 @@ import { RegisterComponent } from './sso/register/register.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     routing,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

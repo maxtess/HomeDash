@@ -6,7 +6,7 @@ export class User {
     lastName: string;
     token: string;
 
-    load () {
+    load(): void {
         this.id = 1
         this.username = 'MaxTess'
         this.password = '123456'

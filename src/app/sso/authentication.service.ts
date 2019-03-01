@@ -13,6 +13,8 @@ export class AuthenticationService {
         let user = new User()
         user.load()
 
+        console.log(login, mdp)
+
         if ( user.username.toLowerCase() != login.toLowerCase() || user.password != mdp ) {
             return false
         }
