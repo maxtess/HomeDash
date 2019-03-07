@@ -1,22 +1,20 @@
-<section>
-    <div *ngIf="error">
-        Une erreur est survenue.
-    </div>
-    
-    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="mat-form-field-wrapper">
-        <div>
-            <mat-form-field>
-                <input matInput placeholder="username" formControlName="username">
-            </mat-form-field>
-        </div>
-        <div>
-            <mat-form-field>
-                <input matInput placeholder="password" formControlName="password">
-            </mat-form-field>
-        </div>
-    
-        <div>
+<mat-card class="login-card">
+    <div *ngIf="error">Une erreur est survenue.</div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">        
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <input matInput placeholder="username" formControlName="username">
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <input matInput placeholder="password" formControlName="password">
+                </mat-form-field>
+            </div>    
+        </mat-card-content>
+        <mat-card-actions >
             <button mat-flat-button color="primary" type="submit" class='mat-button'>Connect</button>
-        </div>
-    </form>
-</section>
+        </mat-card-actions>
+    </form>    
+</mat-card>
