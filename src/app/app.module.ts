@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatCardModule } from '@angular/material';
+import { MatGridListModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatCardModule, MatDialogModule, MatTableModule, MatMenuModule, MatIconModule, MatProgressSpinnerModule } from '@angular/material';
 
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './sso/login/login.component';
@@ -23,11 +23,17 @@ import { RegisterComponent } from './sso/register/register.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     routing,
+    MatGridListModule,
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule,
+    MatTableModule,
+    MatMenuModule,
+    MatIconModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

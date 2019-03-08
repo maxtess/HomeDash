@@ -1,7 +1,9 @@
-<mat-card class="login-card">
-    <div *ngIf="error">Une erreur est survenue.</div>
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">        
-        <mat-card-content>
+<section>
+    <mat-card class="login-card">
+        
+        <div *ngIf="error">Une erreur est survenue.</div>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div>
                 <mat-form-field>
                     <input matInput placeholder="username" formControlName="username">
@@ -11,10 +13,8 @@
                 <mat-form-field>
                     <input matInput placeholder="password" formControlName="password">
                 </mat-form-field>
-            </div>    
-        </mat-card-content>
-        <mat-card-actions >
+            </div>
             <button mat-flat-button color="primary" type="submit" class='mat-button'>Connect</button>
-        </mat-card-actions>
-    </form>    
-</mat-card>
+        </form>
+    </mat-card>
+</section>
